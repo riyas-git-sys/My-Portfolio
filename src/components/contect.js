@@ -32,22 +32,22 @@ const Contact = () => {
                     <p>
                         <strong>Email:</strong>{' '}
                         <a
-                            href="mailto:romanrahuman@gmail.com"
+                            href="mailto:ecriyasahameda@gmail.com"
                             className="text-violet-300 underline"
                         >
-                            romanrahuman@gmail.com
+                            ecriyasahameda@gmail.com
                         </a>
                     </p>
                     <p>
                         <strong>Phone:</strong>{' '}
-                        <a href="tel:+917708820340" className="text-violet-300 underline">
-                            +91 77088 20340
+                        <a href="tel:+916380123825" className="text-violet-300 underline">
+                            +91 63801 23825
                         </a>
                     </p>
                     <p>
                         <strong>LinkedIn:</strong>{' '}
                         <a
-                            href="https://www.linkedin.com/in/rahuman007"
+                            href="https://www.linkedin.com/in/riyas-ahameda"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-violet-300 underline"

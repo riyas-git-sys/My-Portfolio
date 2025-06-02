@@ -9,7 +9,7 @@ const Footer = () => {
                 {/* Social Icons */}
                 <div className="flex space-x-6 text-2xl">
                     <a
-                        href="https://github.com/Abdulrahuma"
+                        href="https://github.com/riyas-git-sys"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-white transition duration-300"
@@ -17,7 +17,7 @@ const Footer = () => {
                         <FaGithub />
                     </a>
                     <a
-                        href="https://linkedin.com/in/rahuman007"
+                        href="https://www.linkedin.com/in/riyas-ahameda"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-white transition duration-300"
@@ -25,7 +25,7 @@ const Footer = () => {
                         <FaLinkedin />
                     </a>
                     <a
-                        href="mailto:romanrahuman@gmail.com"
+                        href="mailto:ecriyasahameda@gmail.com"
                         className="text-gray-400 hover:text-white transition duration-300"
                     >
                         <FaEnvelope />
@@ -36,13 +36,13 @@ const Footer = () => {
                 <a
                     href="/resume.pdf" // Place your resume in the public folder as resume.pdf
                     download
-                    className="mt-4 bg-violet-600 hover:bg-violet-700 text-white font-semibold px-6 py-3 rounded-xl shadow transition duration-300"
+                    className="mt-4 bg-violet-600 hover:bg-violet-700 transition-all duration-300 text-white font-semibold px-6 py-3 rounded-xl shadow-md"
                 >
                     Download Resume
                 </a>
 
                 <p className="text-sm text-gray-500 mt-6">
-                    © {new Date().getFullYear()} Abdul Rahuman. All rights reserved.
+                    © {new Date().getFullYear()} Riyas Ahamed. All rights reserved.
                 </p>
             </div>
         </footer>

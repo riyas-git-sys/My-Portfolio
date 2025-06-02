@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDoubleDownIcon } from '@heroicons/react/24/solid';
-import heroimg from '../assets/img 2.png'; // Update with your correct image path
+import heroimg from '../assets/pimgbg.png'; 
 
 const Hero = () => {
     const [showContact, setShowContact] = useState(false);
@@ -9,6 +9,7 @@ const Hero = () => {
     const handleContactClick = () => {
         setShowContact(!showContact);
     };
+
 
     return (
         <section
@@ -24,7 +25,7 @@ const Hero = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        Hi, I'm <span className="text-violet-500">Abdul Rahuman</span>
+                        Hi, I'm <span className="text-violet-500">Riyas Ahamed</span>
                     </motion.h1>
                     <motion.h2
                         className="text-xl md:text-2xl text-violet-300 mb-6 font-medium"
@@ -47,7 +48,7 @@ const Hero = () => {
                     <motion.button
                         onClick={handleContactClick}
                         whileHover={{ scale: 1.05 }}
-                        className="bg-violet-600 hover:bg-violet-700 transition-all duration-300 text-white px-6 py-3 rounded-xl shadow-md font-semibold"
+                        className="bg-violet-600 hover:bg-violet-800 transition-all duration-300 text-white px-6 py-3 rounded-xl shadow-md font-semibold"
                     >
                         {showContact ? 'Hide Contact Info' : 'Contact Me'}
                     </motion.button>
@@ -60,22 +61,22 @@ const Hero = () => {
                                 animate={{ opacity: 1, height: 'auto' }}
                                 exit={{ opacity: 0, height: 0 }}
                                 transition={{ duration: 0.4 }}
-                                className="overflow-hidden mt-6 bg-gray-800 p-6 rounded-xl shadow-xl space-y-3 max-w-md"
+                                className="overflow-hidden mt-6 bg-gray-800 p-6 rounded-xl shadow-xl space-y-3 max-w-md mx-auto md:mx-0"
                             >
                                 <p><strong>Email:</strong>{' '}
-                                    <a href="mailto:romanrahuman@gmail.com" className="text-violet-300 underline">
-                                        romanrahuman@gmail.com
+                                    <a href="mailto:ecriyasahameda@gmail.com" className="text-violet-300 underline">
+                                        ecriyasahameda@gmail.com
                                     </a>
                                 </p>
                                 <p><strong>Phone:</strong>{' '}
-                                    <a href="tel:+917708820340" className="text-violet-300 underline">
-                                        +91 7708820340
+                                    <a href="tel:+916380123825" className="text-violet-300 underline">
+                                        +91 63801 23825
                                     </a>
                                 </p>
                                 <p>
                                     <strong>LinkedIn:</strong>{' '}
                                     <a
-                                        href="https://www.linkedin.com/in/rahuman007"
+                                        href="https://www.linkedin.com/in/riyas-ahameda"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-violet-300 underline"
@@ -101,7 +102,7 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-
+                
                 {/* Image Section */}
                 <motion.div
                     className="md:w-1/2 flex justify-center"
@@ -111,8 +112,8 @@ const Hero = () => {
                 >
                     <img
                         src={heroimg}
-                        alt="Abdul Rahuman"
-                        className="rounded-3xl shadow-2xl w-full max-w-sm object-cover"
+                        alt="Riyas Ahamed"
+                        className="h-90 w-90 rounded-xl w-full object-cover shadow-lg"
                     />
                 </motion.div>
             </div>
