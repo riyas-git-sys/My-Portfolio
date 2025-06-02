@@ -158,7 +158,7 @@ const Projects = () => {
     return (
         <section id="projects" className="bg-black text-white py-16 px-4 md:px-12">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl font-bold text-violet-500 text-center mb-12">My Projects</h2>
+                <h2 className="text-4xl font-bold text-violet-500 text-center mb-12 transition-transform duration-300 hover:scale-105 hover:text-violet-600">My Projects</h2>
                 <div className="grid md:grid-cols-2 gap-10">
                     {projects.map((project, index) => (
                         <motion.div
@@ -181,7 +181,7 @@ const Projects = () => {
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-violet-300 underline"
+                                        className="text-violet-300 underline hover:text-violet-400 transition-colors duration-100 transform hover:scale-105 duration-500"
                                     >
                                         GitHub
                                     </a>
@@ -189,7 +189,7 @@ const Projects = () => {
                                         href={project.demo}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-violet-300 underline"
+                                        className="text-violet-300 underline hover:text-violet-400 transition-colors duration-100 transform hover:scale-105 duration-500"
                                     >
                                         Live Demo
                                     </a>
