@@ -31,8 +31,8 @@ const projects = [
         title: "Portfolio Website",
         description: "A personal portfolio built with React and Tailwind CSS showcasing my projects and skills.",
         image: imgp1, // use the imported local image
-        github: "https://github.com/yourusername/portfolio",
-        demo: "https://your-portfolio-site.netlify.app"
+        github: "https://github.com/riyas-git-sys/My-Portfolio",
+        demo: "https://myportfolioriyas.netlify.app/"
     },
     {
         title: "Emoji Memory Game 🎮",
