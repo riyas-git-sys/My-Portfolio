@@ -6,7 +6,7 @@ const Contact = () => {
         <section id="contact" className="bg-black text-white py-16 px-4 md:px-12">
             <div className="max-w-4xl mx-auto text-center">
                 <motion.h2
-                    className="text-4xl font-bold text-violet-500 mb-6 hover:text-violet-600 transition-colors duration-300 transition-transform duration-500 hover:scale-5"
+                    className="text-4xl font-bold text-violet-500 mb-6 hover:text-violet-600 transition-colors duration-300"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -32,15 +32,15 @@ const Contact = () => {
                     <p>
                         <strong>Email:</strong>{' '}
                         <a
-                            href="mailto:ecriyasahameda@gmail.com"
-                            className="text-violet-300 underline"
+                            href="mailto:ecriyasahameda@gmail.com?subject=Let%27s%20Connect%20-%20Saw%20Your%20Portfolio&body=Hi%20Riyas%2C%0D%0AI%20just%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you."
+                            className="text-violet-300 underline hover:text-violet-400"
                         >
                             ecriyasahameda@gmail.com
                         </a>
                     </p>
                     <p>
                         <strong>Phone:</strong>{' '}
-                        <a href="tel:+916380123825" className="text-violet-300 underline">
+                        <a href="tel:+916380123825" className="text-violet-300 underline hover:text-violet-400">
                             +91 63801 23825
                         </a>
                     </p>
@@ -50,7 +50,7 @@ const Contact = () => {
                             href="https://www.linkedin.com/in/riyas-ahameda"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-violet-300 underline"
+                            className="text-violet-300 underline hover:text-violet-400"
                         >
                             View Profile
                         </a>

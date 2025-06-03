@@ -64,12 +64,12 @@ const Hero = () => {
                                 className="overflow-hidden mt-6 bg-gray-800 p-6 rounded-xl shadow-xl space-y-3 max-w-md mx-auto md:mx-0"
                             >
                                 <p><strong>Email:</strong>{' '}
-                                    <a href="mailto:ecriyasahameda@gmail.com" className="text-violet-300 underline">
+                                    <a href="mailto:ecriyasahameda@gmail.com?subject=Let%27s%20Connect%20-%20Saw%20Your%20Portfolio&body=Hi%20Riyas%2C%0D%0AI%20just%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you." className="text-violet-300 underline hover:text-violet-400">
                                         ecriyasahameda@gmail.com
                                     </a>
                                 </p>
                                 <p><strong>Phone:</strong>{' '}
-                                    <a href="tel:+916380123825" className="text-violet-300 underline">
+                                    <a href="tel:+916380123825" className="text-violet-300 underline hover:text-violet-400">
                                         +91 63801 23825
                                     </a>
                                 </p>
@@ -79,7 +79,7 @@ const Hero = () => {
                                         href="https://www.linkedin.com/in/riyas-ahameda"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-violet-300 underline"
+                                        className="text-violet-300 underline hover:text-violet-400"
                                     >
                                         View Profile
                                     </a>

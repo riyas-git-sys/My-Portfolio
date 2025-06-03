@@ -25,13 +25,13 @@ const Footer = () => {
                         <FaLinkedin />
                     </a>
                     <a
-                        href="mailto:ecriyasahameda@gmail.com"
+                        href="mailto:ecriyasahameda@gmail.com?subject=Let%27s%20Connect%20-%20Saw%20Your%20Portfolio&body=Hi%20Riyas%2C%0D%0AI%20just%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you."
                         className="text-gray-400 hover:text-white transition duration-300 transition-transform duration-400 hover:scale-125"
                     >
                         <FaEnvelope />
                     </a>
                     <a
-                        href="https://wa.me/916380123825"
+                        href="https://wa.me/916380123825?text=Hi%20Riyas%2C%20I%20just%20visited%20your%20portfolio%20and%20I%E2%80%99m%20impressed%20with%20your%20work.%20Let%E2%80%99s%20connect!"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-white transition duration-300 transition-transform duration-400 hover:scale-125"
