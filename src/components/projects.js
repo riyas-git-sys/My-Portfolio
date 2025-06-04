@@ -179,7 +179,7 @@ const Projects = () => {
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-48 object-cover"
+                                className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
                             />
                             <div className="p-6 space-y-4">
                                 <h3 className="text-2xl font-semibold text-violet-400">{project.title}</h3>
