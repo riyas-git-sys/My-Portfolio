@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import imgp_1 from '../assets/ipl.avif';
 import imgp from '../assets/crypto.png'; 
 import imgp1 from '../assets/portfolio.avif';
 import imgp2 from '../assets/memoryemojigame.avif'; 
@@ -33,6 +34,13 @@ const projects = [
         image: imgp1, // use the imported local image
         github: "https://github.com/riyas-git-sys/My-Portfolio",
         demo: "https://myportfolioriyas.netlify.app/"
+    },
+    {
+        title: "IPL Dashboard",
+        description: "A React application that provides an interactive dashboard for IPL (Indian Premier League) statistics and information.",
+        image: imgp_1, // use the imported local image
+        github: "https://github.com/riyas-git-sys/IPL-Dashboard",
+        demo: "https://ipldashbodriyas.ccbp.tech"
     },
     {
         title: "Emoji Memory Game 🎮",
