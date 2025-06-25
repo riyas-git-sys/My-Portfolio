@@ -239,14 +239,19 @@ const Projects = () => {
 
                 {/* Toggle Button */}
                 {projects.length > 6 && (
-                    <div className="mt-10 text-center">
+                    <motion.div
+                        className="mt-10 text-center"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4, delay: visibleProjects.length * 0.1 }}
+                    >
                         <button
                             onClick={() => setShowAll(!showAll)}
                             className="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-md"
                         >
                             {showAll ? 'View Less' : 'View More'}
                         </button>
-                    </div>
+                    </motion.div>
                 )}
             </div>
         </section>
