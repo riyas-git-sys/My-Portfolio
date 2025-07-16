@@ -4,10 +4,9 @@ import emailjs from 'emailjs-com';
 
 const MessageMe = () => {
   const [formData, setFormData] = useState({
-    form_name: '',  // Changed from 'name' to match template
-    form_email: '', // Changed from 'email' to match template
-    form_phone: '', // Changed from 'mobileno' to match template
-    subject: '',    // Added new field
+    name: '',
+    email: '',
+    mobileno: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -26,27 +25,19 @@ const MessageMe = () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    // Add current time to form data
-    const time = new Date().toLocaleString();
-    const dataToSend = {
-      ...formData,
-      time: time
-    };
-
     // Replace these with your actual EmailJS credentials
-    const serviceID = 'service_g0far4h';
-    const templateID = 'template_9tqhjv5';
-    const userID = '3nAPdAMAHEiGtQDn6';
+    const serviceID = 'YOUR_SERVICE_ID';
+    const templateID = 'YOUR_TEMPLATE_ID';
+    const userID = 'YOUR_USER_ID';
 
-    emailjs.send(serviceID, templateID, dataToSend, userID)
+    emailjs.sendForm(serviceID, templateID, e.target, userID)
       .then((result) => {
         console.log(result.text);
         setSubmitStatus('success');
         setFormData({
-          form_name: '',
-          form_email: '',
-          form_phone: '',
-          subject: '',
+          name: '',
+          email: '',
+          mobileno: '',
           message: ''
         });
       }, (error) => {
@@ -109,95 +100,73 @@ const MessageMe = () => {
             </motion.div>
           )}
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <label htmlFor="form_name" className="block text-gray-300 font-medium mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                id="form_name"
-                name="form_name"
-                value={formData.form_name}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 text-white placeholder-gray-500 transition-all"
-                placeholder="Your name"
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              viewport={{ once: true }}
-            >
-              <label htmlFor="form_email" className="block text-gray-300 font-medium mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="form_email"
-                name="form_email"
-                value={formData.form_email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 text-white placeholder-gray-500 transition-all"
-                placeholder="Your email"
-              />
-            </motion.div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <label htmlFor="form_phone" className="block text-gray-300 font-medium mb-2">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                id="form_phone"
-                name="form_phone"
-                value={formData.form_phone}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 text-white placeholder-gray-500 transition-all"
-                placeholder="Your phone number"
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <label htmlFor="subject" className="block text-gray-300 font-medium mb-2">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 text-white placeholder-gray-500 transition-all"
-                placeholder="Message subject"
-              />
-            </motion.div>
-          </div>
+          <motion.div
+            className="mb-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <label htmlFor="name" className="block text-gray-300 font-medium mb-2">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 text-white placeholder-gray-500 transition-all"
+              placeholder="Your name"
+            />
+          </motion.div>
 
           <motion.div
-            className="mt-6"
+            className="mb-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <label htmlFor="email" className="block text-gray-300 font-medium mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 text-white placeholder-gray-500 transition-all"
+              placeholder="Your email"
+            />
+          </motion.div>
+
+          <motion.div
+            className="mb-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <label htmlFor="mobileno" className="block text-gray-300 font-medium mb-2">
+              Mobile Number
+            </label>
+            <input
+              type="tel"
+              id="mobileno"
+              name="mobileno"
+              value={formData.mobileno}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 text-white placeholder-gray-500 transition-all"
+              placeholder="Your mobile number"
+            />
+          </motion.div>
+
+          <motion.div
+            className="mb-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -219,7 +188,7 @@ const MessageMe = () => {
           </motion.div>
 
           <motion.div
-            className="text-center mt-8"
+            className="text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.0 }}

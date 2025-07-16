@@ -49,7 +49,7 @@ const Hero = () => {
                         <span className="text-sm md:text-base">Welcome to my portfolio..!</span>
 
                         <motion.a
-                            href="https://portfolio-riyas.vercel.app/"
+                            href="https://myportfolioriyas.netlify.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 py-1.5 px-3 bg-[#4a6bff] text-white font-bold rounded-full ml-2.5 border-2 border-transparent"

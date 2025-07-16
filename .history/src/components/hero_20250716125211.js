@@ -5,7 +5,6 @@ import heroimg from '../assets/pimgbg.png';
 
 const Hero = () => {
     const [showContact, setShowContact] = useState(false);
-    const [isHovered, setIsHovered] = useState(false);
 
     const handleContactClick = () => {
         setShowContact(!showContact);
@@ -20,57 +19,6 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-14">
                 {/* Text Section */}
                 <div className="md:w-1/2 text-center md:text-left">
-                    <motion.div
-                        className="inline-flex items-center gap-3 py-2 px-6 bg-white/10 dark:bg-gray-800 rounded-full mb-8 backdrop-blur-md border border-white/20"
-                        whileHover={{ y: -3 }}
-                        transition={{ type: "spring", stiffness: 300 }}
-                        animate={{
-                            boxShadow: isHovered ? "0 10px 20px rgba(37, 99, 235, 0.1)" : "none"
-                        }}
-                        onHoverStart={() => setIsHovered(true)}
-                        onHoverEnd={() => setIsHovered(false)}
-                        >
-                        {/* Animated dot */}
-                        <motion.span 
-                            className="relative w-2.5 h-2.5 bg-green-500 rounded-full"
-                            animate={{
-                            scale: [1, 1.2, 1],
-                            opacity: [0.8, 1, 0.8]
-                            }}
-                            transition={{
-                            duration: 1.5,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                            }}
-                        >
-                            <span className="absolute inset-0 bg-green-500 rounded-full opacity-0 animate-ping" />
-                        </motion.span>
-
-                        <span className="text-sm md:text-base">Welcome to my portfolio..!</span>
-
-                        <motion.a
-                            href="https://portfolio-riyas.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 py-1.5 px-3 bg-[#4a6bff] text-white font-bold rounded-full ml-2.5 border-2 border-transparent"
-                            whileHover={{ 
-                            y: -2,
-                            backgroundColor: "#3a5aef",
-                            borderColor: "#ffffff",
-                            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
-                            }}
-                            whileTap={{ y: 0 }}
-                        >
-                            <motion.img
-                            src="https://i.ibb.co/k6VmPDPV/icons8-change.gif"
-                            alt="Click me icon"
-                            className="w-7 h-7 rounded-lg"
-                            animate={{ rotate: isHovered ? 15 : 0 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                            />
-                            <span>ClickMe!</span>
-                        </motion.a>
-                        </motion.div>
                     <motion.h1
                         className="text-5xl md:text-6xl font-extrabold leading-tight mb-4"
                         initial={{ opacity: 0, y: -20 }}
