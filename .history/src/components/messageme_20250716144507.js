@@ -243,7 +243,7 @@ const MessageMe = () => {
                 </span>
               ) : (<span className="flex items-center justify-center">
                 Send Message
-                <i className="fas fa-paper-plane ml-2"></i>
+                <i className="fas fa-paper-plane"></i>
               </span>)}
             </motion.button>
           </motion.div>

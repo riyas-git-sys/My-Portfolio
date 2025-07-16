@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const MessageMe = () => {
   const [formData, setFormData] = useState({
@@ -243,7 +242,9 @@ const MessageMe = () => {
                 </span>
               ) : (<span className="flex items-center justify-center">
                 Send Message
-                <i className="fas fa-paper-plane ml-2"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
               </span>)}
             </motion.button>
           </motion.div>
