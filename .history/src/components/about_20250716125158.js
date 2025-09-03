@@ -47,8 +47,6 @@ const About = () => {
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Bootstrap</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Javascript</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">React.js</li>
-                            <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">React Native</li>
-                            <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Expo</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">UI/UX Design</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Framer Motion</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Tailwind CSS</li>
@@ -74,7 +72,7 @@ const About = () => {
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">SQL</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">MongoDB</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">My SQL</li>
-                            <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Firebase</li>
+                            <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">NoSQL</li>
                         </ul>
                         
                     </div>

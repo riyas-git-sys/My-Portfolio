@@ -1,7 +1,5 @@
 import React,{useState} from 'react';
 import { motion } from 'framer-motion';
-import imgp_6 from '../assets/zing.png';
-import imgp_5 from '../assets/staffy.png';
 import imgp_4 from '../assets/purepick.png';
 import imgp_3 from '../assets/jobby.jpg';
 import imgp_2 from '../assets/gitpop.jpg';  
@@ -23,24 +21,9 @@ import imgp13 from '../assets/passman.avif';
 import imgp14 from '../assets/blog.avif'; 
 import imgp15 from '../assets/faq.avif'; 
 import imgp16 from '../assets/match.avif'; 
-import imgp17 from '../assets/stopwatch.avif';
-import imgp18 from '../assets/portfolio2.png' 
+import imgp17 from '../assets/stopwatch.avif'; 
 
 const projects = [
-    {
-        title: "Zing Chat Application",
-        image: imgp_6,
-        description: "Build Zing Chat Application which is a full-stack, real-time messaging application I built using the MERN stack and Socket.io. It features instant messaging with live typing indicators, secure JWT authentication, and the ability to create and manage group chats with admin controls. The application boasts a responsive, modern UI and a robust, scalable backend with RESTful APIs, showcasing comprehensive skills in both front-end and back-end development.",
-        github: "https://github.com/riyas-git-sys/Zing-frontend",
-        demo: "https://zing-chat-rho.vercel.app/"
-    },
-    {
-        title: "Staffy Employee Dashboard App",
-        image: imgp_5,
-        description: "Built a modern attractive Employee Dashboard with React, Firebase & TailwindCSS, featuring role-based access, CRUD operations, and real-time data. Implemented authentication, project management, with announcements, and responsive & impressive UI using Vite for optimized performance.",
-        github: "https://github.com/riyas-git-sys/Staffy/",
-        demo: "https://staffy-blond.vercel.app/"
-    },
     {
         title: "PurePick E-commerce Website",
         image: imgp_4, // use the imported local image
@@ -194,14 +177,7 @@ const projects = [
         image: imgp17, // use the imported local image
         github: "https://github.com/riyas-git-sys/Stop-Watch-application",
         demo: "https://stopwatchriyas.ccbp.tech"
-    },
-    {
-        title: "Portfolio Website",
-        description: "A personal portfolio built with HTML, CSS and JS showcasing my projects and skills.",
-        image: imgp18, // use the imported local image
-        github: "https://github.com/riyas-git-sys/PortfolioRiyas",
-        demo: "https://portfolio-riyas.vercel.app/"
-    },
+    }
     // {
     //     title: "",
     //     image: , // use the imported local image

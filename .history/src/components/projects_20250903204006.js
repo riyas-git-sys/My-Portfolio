@@ -23,8 +23,7 @@ import imgp13 from '../assets/passman.avif';
 import imgp14 from '../assets/blog.avif'; 
 import imgp15 from '../assets/faq.avif'; 
 import imgp16 from '../assets/match.avif'; 
-import imgp17 from '../assets/stopwatch.avif';
-import imgp18 from '../assets/portfolio2.png' 
+import imgp17 from '../assets/stopwatch.avif'; 
 
 const projects = [
     {
@@ -194,14 +193,7 @@ const projects = [
         image: imgp17, // use the imported local image
         github: "https://github.com/riyas-git-sys/Stop-Watch-application",
         demo: "https://stopwatchriyas.ccbp.tech"
-    },
-    {
-        title: "Portfolio Website",
-        description: "A personal portfolio built with HTML, CSS and JS showcasing my projects and skills.",
-        image: imgp18, // use the imported local image
-        github: "https://github.com/riyas-git-sys/PortfolioRiyas",
-        demo: "https://portfolio-riyas.vercel.app/"
-    },
+    }
     // {
     //     title: "",
     //     image: , // use the imported local image

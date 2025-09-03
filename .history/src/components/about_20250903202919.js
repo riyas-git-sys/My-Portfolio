@@ -48,7 +48,6 @@ const About = () => {
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Javascript</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">React.js</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">React Native</li>
-                            <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Expo</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">UI/UX Design</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Framer Motion</li>
                             <li className="transition-transform duration-300 hover:scale-105 hover:text-violet-300">Tailwind CSS</li>
