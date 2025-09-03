@@ -1,11 +1,11 @@
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import logo from '../assets/pic.png';
-import ReactChatbotify from 'react-chatbotify'; // Correct import
+import { ChatBot } from 'react-chatbotify'; // Import the chatbot component
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [chatbotOpen, setChatbotOpen] = useState(false);
+    const [chatbotOpen, setChatbotOpen] = useState(false); // State for chatbot visibility
 
     // Chatbot configuration
     const chatbotStyles = {
@@ -15,7 +15,7 @@ function Header() {
             fontFamily: "system-ui, sans-serif",
         },
         chatButton: {
-            icon: "🤖",
+            icon: "🤖", // You can customize this
         },
     };
 
@@ -38,23 +38,14 @@ function Header() {
                     label: "Contact Info",
                     trigger: "contact",
                 },
-                {
-                    value: "resume",
-                    label: "Download Resume",
-                    trigger: "resume",
-                },
             ],
         },
         projects: {
-            message: "Check out my projects section below! You'll find my latest work there.",
+            message: "Check out my projects section below!",
             end: true,
         },
         contact: {
-            message: "You can reach me at ecriyasahameda@gmail.com or connect with me on LinkedIn.",
-            end: true,
-        },
-        resume: {
-            message: "You can download my resume from the contact section or visit my portfolio.",
+            message: "You can reach me at ecriyasahameda@gmail.com",
             end: true,
         },
     };
@@ -90,7 +81,7 @@ function Header() {
                             className="ml-4 p-2 bg-violet-500 rounded-full hover:bg-violet-600 transition-colors"
                             aria-label="Open chatbot"
                         >
-                            <span className="text-white text-sm">Chat</span>
+                            <span className="text-white">🤖</span>
                         </button>
                     </nav>
 
@@ -99,10 +90,10 @@ function Header() {
                         {/* Chatbot Toggle Button for Mobile */}
                         <button
                             onClick={() => setChatbotOpen(!chatbotOpen)}
-                            className="md:hidden mr-4 p-2 bg-violet-500 rounded-md hover:bg-violet-600 transition-colors text-sm"
+                            className="md:hidden mr-4 p-2 bg-violet-500 rounded-full hover:bg-violet-600 transition-colors"
                             aria-label="Open chatbot"
                         >
-                            <span className="text-white">Chat</span>
+                            <span className="text-white">🤖</span>
                         </button>
                         
                         <button
@@ -140,8 +131,8 @@ function Header() {
 
             {/* Chatbot Component */}
             {chatbotOpen && (
-                <div className="fixed bottom-24 right-6 z-50 w-80 h-96">
-                    <ReactChatbotify
+                <div className="fixed bottom-24 right-6 z-50">
+                    <ChatBot
                         options={chatbotStyles}
                         flow={chatbotFlow}
                     />
